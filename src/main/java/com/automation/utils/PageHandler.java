@@ -32,6 +32,8 @@ public class PageHandler {
 	protected static Actions action;
 	protected RepositoryParser repositoryParser;
 	protected String pageName;
+	public static String mobileNumber;
+	
 
 	public WebElement findElement(PageElement pageObject) {
 		WebElement element = null;
@@ -345,6 +347,12 @@ public class PageHandler {
 	public static void dragDown(WebDriver driver, WebElement from, WebElement to, String data) {
 		// Actions act = new Actions(driver);
 		action.dragAndDrop(from, to).build().perform();
+	}
+
+	public static String getRandomNumber() {
+		int random = 1000000000 + (int) (Math.random() * 100000);
+		mobileNumber = "" + random;
+		return mobileNumber;
 	}
 
 }

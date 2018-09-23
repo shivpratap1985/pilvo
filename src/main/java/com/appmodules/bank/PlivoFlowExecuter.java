@@ -1,4 +1,4 @@
-package com.appmodules.plivo;
+package com.appmodules.bank;
 
 import java.util.Random;
 
@@ -14,6 +14,7 @@ import com.pageobjects.elements.PlivoElement;
 public class PlivoFlowExecuter {
 	public static Actions action;
 	public static WebDriver driver;
+	public static String mobileNumber;
 
 	public void plivoLogin(WebDriver driver, String pageName, RepositoryParser repositoryParser) {
 		Actions act = new Actions(driver);
