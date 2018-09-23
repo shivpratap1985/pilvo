@@ -1,0 +1,64 @@
+{  
+   "pages":[  
+      {  
+         "name":"Plivo",
+         "uiObjects":[  
+            {  
+               "name":"createApp",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='links']/a[text()='Create an App']"
+            },
+            {  
+               "name":"startApp",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":"//div/button[contains(text(),'get start')]"
+            },
+            {  
+               "name":"addNewPage",
+               "type":"Link",
+               "locatorType":"id",
+               "locatorValue":"add-page"
+            },
+            {  
+               "name":"newPageName",
+               "type":"textBox",
+               "locatorType":"xpath",
+               "locatorValue":"//form[@class='unsubmittable']//input"
+            },
+            {  
+               "name":"createPageButton",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='create-dialog']/following-sibling::div/button[text()='Create']"
+            },
+            {  
+               "name":"messageTab",
+               "type":"link",
+               "locatorType":"xpath",
+               "locatorValue":"//h3//a[contains(text(),'Messaging')]"
+            },
+            {  
+               "name":"sendSMS",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":"(//ul[@class='module-group']//li[3])[4]"
+            },
+            {  
+               "name":"sendSMSArroe",
+               "type":"link",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='rec-12175']"
+            },
+            {  
+               "name":"startCircle",
+               "type":"button",
+               "locatorType":"xpath",
+               "locatorValue":"//div[@id='node-773790']"
+            }
+          
+         ]
+      }
+   ]
+}

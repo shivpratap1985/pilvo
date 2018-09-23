@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Plivo REPORT">
+
+	<test verbose="2" name="Plivo test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="url" value="PLIVO" />
+		<classes>
+			<class name="com.automation.testcases.PlivoTestCase">
+			</class>
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
+            

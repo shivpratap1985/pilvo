@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+ 
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+<appender name="fileAppender" class="org.apache.log4j.RollingFileAppender">
+ 
+<param name="Threshold" value="INFO" />
+ 
+<param name="File" value="logfile.log"/>
+
+<param name="MaxFileSize" value ="5MB"/>
+<param name ="MaxBackupIndex" value ="3"/>
+ 
+<layout class="org.apache.log4j.PatternLayout">
+ 
+<param name="ConversionPattern" value="%d %-5p [%c{1}] %m %n" />
+
+ 
+</layout>
+ 
+</appender>
+ 
+<appender name="FlightfileAppender" class="org.apache.log4j.RollingFileAppender">
+ 
+<param name="Threshold" value="INFO" />
+ 
+<param name="File" value="flightlogfile.log"/>
+
+<param name="MaxFileSize" value ="5MB"/>
+<param name ="MaxBackupIndex" value ="3"/>
+ 
+<layout class="org.apache.log4j.PatternLayout">
+ 
+<param name="ConversionPattern" value="%d %-5p [%c{1}] %m %n" />
+
+ 
+</layout>
+ 
+</appender>
+
+<appender name="HotelfileAppender" class="org.apache.log4j.RollingFileAppender">
+ 
+<param name="Threshold" value="INFO" />
+ 
+<param name="File" value="hotellogfile.log"/>
+
+<param name="MaxFileSize" value ="5MB"/>
+<param name ="MaxBackupIndex" value ="3"/>
+ 
+<layout class="org.apache.log4j.PatternLayout">
+ 
+<param name="ConversionPattern" value="%d %-5p [%c{1}] %m %n" />
+
+ 
+</layout>
+ 
+</appender>
+
+<appender name="HolidaysfileAppender" class="org.apache.log4j.RollingFileAppender">
+ 
+<param name="Threshold" value="INFO" />
+ 
+<param name="File" value="holidaylogfile.log"/>
+
+<param name="MaxFileSize" value ="5MB"/>
+<param name ="MaxBackupIndex" value ="3"/>
+ 
+<layout class="org.apache.log4j.PatternLayout">
+ 
+<param name="ConversionPattern" value="%d %-5p [%c{1}] %m %n" />
+
+ 
+</layout>
+ 
+</appender>
+
+ <logger name="com.via.testcases.FlightsTestCase">
+  <level value="DEBUG"/>
+  <appender-ref ref="FlightfileAppender"/>
+ </logger>
+ 
+  <logger name="com.via.testcases.HotelsTestCase">
+  <level value="DEBUG"/>
+  <appender-ref ref="HotelfileAppender"/>
+ </logger>
+
+  <logger name="com.via.testcases.HolidaysTestCase">
+  <level value="DEBUG"/>
+  <appender-ref ref="HolidaysfileAppender"/>
+ </logger>
+
+<root>
+ 
+<level value="INFO"/>
+ 
+<appender-ref ref="fileAppender"/>
+ 
+</root>
+ 
+</log4j:configuration>
