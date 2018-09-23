@@ -1,10 +1,13 @@
-package com.appmodules.bank;
+package com.appmodules.plivo;
+
+import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
+import com.automation.utils.PageHandler;
 import com.automation.utils.RepositoryParser;
 import com.pageobjects.elements.PlivoElement;
 
@@ -44,6 +47,9 @@ public class PlivoFlowExecuter {
 					.click().moveByOffset(100, 60) // second point
 					.doubleClick().build();
 			drawAction.perform();
+
+			WebElement phoneNumber = plivo.phoneNumber();
+			phoneNumber.sendKeys(PageHandler.getRandomNumber());
 			// Passing
 
 		} catch (Exception e) {

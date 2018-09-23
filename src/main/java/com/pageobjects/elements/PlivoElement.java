@@ -43,4 +43,12 @@ public class PlivoElement extends PageHandler {
 		return findElement("sendSMS");
 	}
 
+	public WebElement phoneNumber() {
+		return findElement("phoneNumber");
+	}
+
+	public WebElement textmessage() {
+		return findElement("textmessage");
+	}
+
 }

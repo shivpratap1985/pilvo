@@ -56,7 +56,18 @@
                "type":"button",
                "locatorType":"xpath",
                "locatorValue":"//div[@id='node-773790']"
+            },{  
+               "name":"phoneNumber",
+               "type":"textbox",
+               "locatorType":"xpath",
+               "locatorValue":"//textarea[@name='phone_constant']"
+            },{  
+               "name":"textmessage",
+               "type":"textbox",
+               "locatorType":"xpath",
+               "locatorValue":"(//textarea[@name='message_phrase[]'])[1]"
             }
+           
           
          ]
       }
