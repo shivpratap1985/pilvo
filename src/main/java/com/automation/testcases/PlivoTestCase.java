@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.appmodules.bank.PlivoFlowExecuter;
+import com.appmodules.flowexcut.PlivoFlowExecuter;
 import com.automation.utils.Constant;
 import com.automation.utils.Log;
 import com.automation.utils.PageHandler;

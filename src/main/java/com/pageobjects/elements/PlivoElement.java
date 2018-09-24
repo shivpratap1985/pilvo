@@ -28,7 +28,7 @@ public class PlivoElement extends PageHandler {
 	}
 
 	public WebElement newPageName() {
-		return findElement("NewPageName");
+		return findElement("newPageName");
 	}
 
 	public WebElement createPageButton() {

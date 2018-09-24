@@ -33,7 +33,6 @@ public class PageHandler {
 	protected RepositoryParser repositoryParser;
 	protected String pageName;
 	public static String mobileNumber;
-	
 
 	public WebElement findElement(PageElement pageObject) {
 		WebElement element = null;
@@ -256,15 +255,14 @@ public class PageHandler {
 		driver.manage().window().setSize(maximizedScreenSize);
 	}
 
-
-
 	public WebDriver openBrowser(String browserName, String Url) {
 
 		if (browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", Constant.MAC_FIREFOXDRIVER_PATH);
 			driver = new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", Constant.MAC_CHROMEDRIVER_PATH);
+			System.setProperty("webdriver.chrome.driver",
+					"/Users/shprata/Shiv/workspaceShiv/number-test_ass/quickfuseapps/Driver/Chrome/macchromedriver");
 			// ChromeOptions options = new ChromeOptions();
 			// options.addArguments("--disable-extensions");
 			driver = new ChromeDriver();

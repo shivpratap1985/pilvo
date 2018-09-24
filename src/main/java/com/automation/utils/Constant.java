@@ -13,7 +13,8 @@ public class Constant {
 	public static final String SEPERATOR = "/";
 	public static final String windowsSeperator = "\\";
 	public static final String SCREENSHOTS_PATH = null;
-	public static final String MAC_FIREFOXDRIVER_PATH = "/Driver/geckodriver/geckodriver.exe";
+	public static final String MAC_FIREFOXDRIVER_PATH = System.getProperty("user.dir")
+			+ "/Driver/geckodriver/geckodriver.exe";
 
 	public static final String MAC_CHROMEDRIVER_PATH = System.getProperty("user.dir")
 			+ "/Driver/Chrome/chromedriver.exe";

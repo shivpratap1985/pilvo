@@ -25,7 +25,7 @@
                "name":"newPageName",
                "type":"textBox",
                "locatorType":"xpath",
-               "locatorValue":"//form[@class='unsubmittable']//input"
+               "locatorValue":"//div//form[@class='unsubmittable']//input"
             },
             {  
                "name":"createPageButton",
@@ -43,7 +43,7 @@
                "name":"sendSMS",
                "type":"button",
                "locatorType":"xpath",
-               "locatorValue":"(//ul[@class='module-group']//li[3])[4]"
+               "locatorValue":"(//ul[@class='module-group']//li[3])[4]/a/span"
             },
             {  
                "name":"sendSMSArroe",
